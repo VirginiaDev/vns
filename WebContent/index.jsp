@@ -467,7 +467,7 @@ an expressive & impressive way to digitization
            <div class="contact-form">
                         <h3 class="contact-info-title">Request A Quote</h3>
                         <div class="row">
-                              <form id="contact-form" class="form-group" name="contact-form" method="POST" action="ajax/ajax-contact.php">
+                              <form id="contact-form" class="form-group" name="contact-form">
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div class="form-group">
                                         <label class="control-label sr-only " for="Name"></label>
@@ -507,11 +507,15 @@ an expressive & impressive way to digitization
                                         <textarea class="form-control pdt20" id="textarea" name="message" rows="4" placeholder="Message"></textarea>
                                     </div>
                                 </div>
+                                </form>
                                 <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
-                                	<button type="submit" class="btn btn-primary btn-lg submit" name="btn-submit">Send message </button><img src = "images/giphy.gif" class="img loader-img" id="register-loader" style ="display:none;" alt="Image-Giphy ">
+                                	<button id="sendbtn-1" data-loading-text="<i class='fa fa-spinner fa-spin '></i> Processing" type="button"  value="Send" class="btn btn-primary btn-lg submit" name="btn-submit">Send message </button><img src = "images/giphy.gif" class="img loader-img" id="register-loader" style ="display:none;" alt="Image-Giphy ">
                                     
                                 </div>
-                            </form>
+                                 <div id="thankyoudiv" style="display:none">
+  <label style="color:white">Thank you please check your email..we have sent a confirmation email</label>
+  </div>
+                            
                         </div>
                     </div>
         </div>
@@ -1080,3 +1084,84 @@ Clear Contract For Your Business</h4>
 include("includes/footer.php");
 ?> -->
 <%@include file="includes/footer.jsp" %>
+<script type="text/javascript">
+	
+    $('#sendbtn-1').on('click', function() {
+        var $this = $(this);
+      $this.button('loading');
+      ////alert("working");
+  	var name=document.getElementById('req_name').value;
+  	var email=document.getElementById('req_email').value;
+  	var phn=document.getElementById('req_phone').value;
+  	var message=document.getElementById('req_message').value;
+  	var email_filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  	var phoneno = /^\d{10}$/;
+  	var email_check="false";
+  	var phn_check="false";
+  	//alert(name+"="+email+"="+phn+"="+company+"="+message);
+  	
+  	if(email.length==0 || name.length==0 || phn.length==0 || message.length==0){
+      	alert("please fill all the feilds");
+  		$this.button('reset');
+  	}
+  	
+  	else{
+  		if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email) && phn.match(phoneno))
+  		  {
+  			$(document).ready(function() {
+                  
+                  
+                  $.ajax({
+                  url: "ajax/save_request_a_quote_details.jsp",
+                  type: "post",
+                  data: {
+                  name:name,
+                  email:email,
+                  phn:phn,
+                  message:message},
+                 
+                
+                  success : function(data){
+                 // //alert(data);
+                 
+             //    document.getElementById('loaderDisplay').style.display='none';
+              document.getElementById('req_name').value="";
+               	document.getElementById('req__email').value="";
+               	document.getElementById('req_phone').value="";
+               	document.getElementById('req_message').value="";
+                 document.getElementById("contact-form").style.display='block';
+                 document.getElementById("sendbtn-1").style.display='block';	
+                 document.getElementById("thankyoudiv-1").style.display='block';
+                 setTimeout(thankyou, 3000);
+                 $this.button('reset');
+                
+                  }
+                  
+                  });
+                  
+                  });
+  		  }else{
+  			 $this.button('reset');
+  			  alert("please enter a valid email or phone number");
+  		  }
+  	
+  	}
+  	
+        
+    });
+
+    function SaveQuickEnquiryDetails(){
+
+    }
+    </script>
+    <script>
+    function thankyou(){
+    	$("#thankyoudiv-1").fadeOut();
+  //  	$("#send").reset();
+    	$("#contact-form").fadeIn();
+    	$("#contact-form")[0].reset();
+    	$("#sendbtn-1").fadeIn();
+    //    document.getElementById("send").style.display='none'; 	
+
+    }
+    </script>

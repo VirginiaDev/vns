@@ -181,72 +181,39 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p class="section-description">Starting a new job can be nerve-racking , but it's also exciting. You're embarking on a new future, positioning yourself to write a fresh story on a clean slate.</p>
 
 
-     	<div class="row">
-			 
-			    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-               
-					<div class="box-part">
-                        
-                       <img src="images/web.png" alt="Front End Web Developer">
-                        
-						<div class="title">
-							<h4> Front-End Web Developer </h4>
-						</div>
-                        
-						<div class="text">
-							Experience Required: 1-3 years
-							<span>2 Jobs</span>
-						</div>
-                        
-						<a href="career-detail"><button type="submit" class="all_btn">Apply Now</button></a>
-					 </div>
-				</div>	 
-				
-				 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-               
-					<div class="box-part">
-						<img src="images/php.png" alt="PHP Developer">
-                        
-              
-						<div class="title">
-							<h4> PHP Developer </h4>
-						</div>
-                        
-						<div class="text">
-							Experience Required: 0-3 years
-							<span>5 Jobs</span>
-						</div>
-                        
-						<a href="career-detail"><button type="submit" class="all_btn">Apply Now</button></a>
-                        
-                        
-					 </div>
-				</div>	 
-				
-				 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-               
-					<div class="box-part">
-                        
-                      <img src="images/java.png" alt="Java Developer">
-                        
-						<div class="title">
-							<h4> Java Developer</h4>
-						</div>
-                        
-						<div class="text">
-							Experience Required: 0-3 years
-							<span>20 Jobs</span>
-						</div>
-                        
-						<a href="career-detail"><button type="submit" class="all_btn">Apply Now</button></a>
-                        
-                        
-					 </div>
-				</div>	 
-				
-				
+     	<section class="section">
+	<div class="container">
+ 
+  <div class="box">
+  <div class="box-col box-80">
+     <h4>SMPP Developer/Kannel Developer</h4>
+    <span class="function">Chandigarh, Full-Time</span>
+  </div>
+  
+  <div class="box-col box-20 text-right">
+    <a class="button" href="https://virtuosonetsoft.com/career-detail.jsp">Apply</a>
+  </div>
+  
+</div>
 
-		</div>	
+<div class="box">
+  <div class="box-col box-80">
+     <h4><b> Technical Project Manager-Telecom</b></h4>
+    <span class="function">Chandigarh, Full-Time</span>
+  </div>
+  
+  <div class="box-col box-20 text-right">
+   <a class="button" href="https://virtuosonetsoft.com/career-detail.jsp">Apply</a>
+  </div>
+ 
+  
+
+
+ 
+
+	</div>
+</section>
+     	
 	
 		
 		</div>	</section>	

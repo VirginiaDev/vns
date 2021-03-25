@@ -38,7 +38,7 @@ Outer Ring Road, Bangalore- 560045</p>
   <p>  Level 16th, World Trade Tower,
 Noida Sector 16,
 Near Metro Station,
-Noida – 201301, UP</p>
+Noida 	&#8211; 201301, UP</p>
   
 </div>
 	</div>
@@ -90,14 +90,9 @@ Noida – 201301, UP</p>
 	</div>
 	
 	<div class="privacy-policy">
-		<p>©2011-2019 All Rights Reserved. Virtuoso Netsoft  </p></div>
+		<p>&#169; 2011-2019 All Rights Reserved. Virtuoso Netsoft  </p></div>
 	</div>
-	<div> <div class="social-links1"> 
-		  <a href="https://twitter.com/VNS_Virtuoso" class="twitter" target="_blank"><i class="fab fa-twitter"></i></a> 
-		  <a href="https://www.facebook.com/VirtuosoNetsoft.VNS" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a> 
-		  <a href="https://www.instagram.com/virtuosonetsoft/" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a> 
-		  <a href="https://www.linkedin.com/company/virtuoso-netsoft-pvt-ltd/" class="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a> </div>
-		</div>
+	
 </footer>
 	
 <!--	<a href="#" style="color: #fff">Privacy & Terms</a>-->

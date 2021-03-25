@@ -144,7 +144,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     
       </li>
           
-			    <li class="nav-item"> <a class="nav-link" href="tenders">Tenders</a></li>
+			     <li class="nav-item"> <a class="nav-link" href="tenders">Tenders</a></li>
           
           <li class="nav-item"> <a class="nav-link" href="contact">Contact</a> </li>
         </ul>
@@ -158,6 +158,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div class="col-md-8">
 			  <h1>Web Development</h1>
  <p class="white_txt">No. 1 Website Development Company<br> Trusted By 2500+  </p>
+ 
            <div class="row">
     <div class="col-md-5">
            <a href="contact"><button type="submit" class="btn btn-outline-default btn-lg" name="btn-submit" formaction="sms24hours">Connect Now</button></a>
@@ -238,7 +239,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
 
 		
-		<p>Your Vision Is Our Project. Let’s Impress Your Potential Customers With Expressive & High-Performance Website together. Now is the time to go digital. Beat your competitors and become the leaders in your industry today with our expert Website development solutions at VNS. With our specialization in all the latest technologies, we are well equipped to develop high-performance websites.  
+		<p>Your Vision Is Our Project. Let	&#39;s Impress Your Potential Customers With Expressive & High-Performance Website together. Now is the time to go digital. Beat your competitors and become the leaders in your industry today with our expert Website development solutions at VNS. With our specialization in all the latest technologies, we are well equipped to develop high-performance websites.  
 		</p>
 		<p>Planning To Take Your Business online? Hire the best website development company today! 
 Hurry! Consult Today & Give Your Dreams Wings 

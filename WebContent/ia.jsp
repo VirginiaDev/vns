@@ -309,7 +309,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="row">
       <div class="col-md-12">
         <div class="request_text">
-			<h2><b>Achieve Your Intelligent Automation Goals with Virtuoso Netsoft Solutions  </b></h2>
+			<h2><b>Achieve Your Intelligent Automation Goals<br> with Virtuoso Netsoft Solutions  </b></h2>
 			<p>Start your automation process by focusing on the basic manual, people-intensive processes and finding a perfect way to simplify the process using RAP (Robotic automation process). This entire process can help modernize your entire workplace equation, making it more precise. </p>
 
         </div>

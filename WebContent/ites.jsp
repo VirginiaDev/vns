@@ -304,7 +304,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 								<div class="row">
 								<div class="col-md-4">
 								<div class="service-icon">
-									<img src="images/trade.png" alt="Trade Finance Operation Outsourcing">
+									<img src="images/trade.jpg" alt="Trade Finance Operation Outsourcing">
 									</div></div>
 								<div class="col-md-8">
 								<div class="service-content">

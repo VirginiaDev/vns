@@ -187,25 +187,59 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             <h3>Skills Required:</h3>
                             <p><b>No. of Vacancies :</b> 2</p>
                             <p><b>Experience :</b> 1 - 3 years</p>
-                            <p><b>Job Description:</b></p>
+                            <p><b>Job Description:</b> C/C++ Developer - Kannel Bearerbox Gateway - OpenSMPPBox - SQLBox</p>
+                            <p><b>Salary:</b> 500000-800000 PA(for right candidate, we can increase the salary)</p>
                             <ol type="1">
-                                <li>Should have a background in software development, academically and / or professionally.</li>
-                                <li>Should have experience in PHP with strong hand in Core PHP, MVC frameworks, Cake PHP, Codeigniter.</li>
-                                <li>Should be having good experience with MySQL database, Database Management and SQL Queries.</li>
-                                <li>Must have a solid technical background with understanding and/or hands-on experience in software development and web technologies.</li>
-                                <li>Strong grasp in web development open source: CSS, XHTML, PHP5, MySql, JavaScript, jQuery.</li>
-                                <li>Understanding of open source projects like Wordpress, Magento etc, will be considered as plus point.</li>
-                                <li>Willingness to work hard to achieve company's commitments.</li>
+
+                                
 
                             </ol>
                             <p><b>Job Responsibilities:</b></p>
                             <p><b>Technical</b></p>
                             <ol>
-                                <li>Maintain standards of software quality by establishing good coding/code commenting practices and code/files management habits. Takes care of standards in the projects they are involved.</li>
-                                <li>Should be self organized and make sure that the project team members (software programmer/associative developer) is self organized.</li>
-                                <li>Make sure to commits only what He/She can deliver.</li>
-                                <li>Database Design & planning. Make sure to be verified by Team lead.</li>
-                                <li>Execute system development and maintenance activities.</li>
+                                <li>Experience in C/C++, Data-structure, Socket programming, OOPS knowledge</li>
+                                <li>Working experience with SMPP protocol, SMS Gateway like Kannel.</li>
+                                <li>Must have knowledge of installation and configuration of earerbox Gateway,OpenSMPPBox,SQLBox</li>
+                                <li>The BearerBox,OpenSMPPBox customization accroding to client requirement.</li>
+                                <li>Configuration of Kannel SMS/WAP. SMPP Protocol for SMS Routing.</li>
+                                 <li>Understanding HTTP connectivity, Caching, Web Services, XML, AJAX, JSON</li>
+                                  <li>Knowledge of PHP/Java and Web servers like Tomcat, Apache etc. will be added advantage.</li>
+                            </ol>
+
+                        </div>
+                    </div>
+                    <div class="service-details-content">
+
+                        <div class="service-details-info">
+                            <h3>Technical Project Manager-Telecom</h3>
+                            <p><b>No. of Vacancies :</b> 2</p>
+                            <p><b>Experience :</b> 5 years- 10 years</p>
+                            <p><b>Industry Experience:</b> Telecom</p>
+                            <p><b>Job Description:</b>The Technical Program Manager will bridge the gap between our technology, systems, and processes and the
+business by using data analytics to assess processes, determine requirements and deliver data-driven
+recommendations</p>
+                            <p><b>Salary:</b> No bar for right candidates</p>
+                            <p><b>Requirement :</b>Willing to relocate to Chandigarh</p>
+                            <ol type="1">
+
+                                
+
+                            </ol>
+                            <p><b>Job Responsibilities:</b></p>
+                            <p><b>Technical</b></p>
+                            <p></p>
+                            <ol>
+                                <li>Telecom Project Managers are responsible for coordinating telecommunication systems installation projects.</li>
+                                <li>Should have Experience in integrating and deployment of telecom Services in coordination with Technical team</li>
+                                <li>Coordination with Vendors and top management for driving the Project Successfully</li>
+                                <li>Good in drafting technical literature documents in coordination with technical team , as per the requirement</li>
+                                <li>Should have experience in handling SMSC Projects.</li>
+                                 <li>Managed, tracked and Coordinated problem resolution and escalation Processes</li>
+                                  <li>Facilitate quick resolution of open issues</li>
+                                  <li>Allocation, installation, configuration, activation and testing of resources to meet the service requirements,
+					or in response to alleviate specific resource capacity shortfalls, availability concerns or failure conditions<li>
+				<li>Managing, tracking, monitoring, analyzing, controlling and reporting on the performance of resources<li>
+				<li>Coordinating with multiple teams across organization and ensuring uninterrupted flow of work.<li>
                             </ol>
 
                         </div>

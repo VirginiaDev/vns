@@ -282,7 +282,7 @@ Our Success Is Our Motto
     <li>
       <div>
 		  <time>2019</time>
-		  <b>Our Client’s Success Is Our Motto</b> 
+		  <b>Our Client	&#39;s Success Is Our Motto</b> 
 
 		  At VNS, we have a clear motto of serving all our clients with the best digital communication & messaging solutions that our clientele deserves for their growth. 
 
