@@ -15,21 +15,24 @@ import org.apache.log4j.Logger;
 
 
 public class SendEmail {
+	
+	public static void main(String args[]) {
+		new SendEmail("mantosh", "smantosh06@gmail.com", "7009073863");
+	}
 
 //	public static Logger log = Logger.getLogger(SendEmail.class);
 	public  SendEmail(String username,String email,String phone)
 	{
 	//	log.info("in send email>>>>>>>>>>>>>>>>>>>>>>>>>");
-		
 		String host ="smtp.gmail.com" ; 
-		String user = "hello@virtuosonetsoft.in";
-		String pass = "vnsdmm@123"; 
+		String user = "singhsukhmander965@gmail.com";
+		String pass = "9855829454"; 
 		String to = email; 
-		String from = "hello@virtuosonetsoft.in";
-	
-	
+		String from = "singhsukhmander965@gmail.com";
 		String subject="";
 		String txt_msg="";
+	
+	
 		
 		Properties props = new Properties();
         //props.put("mail.smtp.host", "smtp.mail.yahoo.com");

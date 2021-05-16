@@ -321,111 +321,144 @@ Punjab - 160101</div>
                 <div id="tabsContent" class="tab-content">
                     <div id="sales" class="tab-pane fade active show">
                         <div class="card-body">
-						<form id="contact-form-sale" name="contact-form-sale" method="POST" action="ajax/ajax-contact-form.php">
+						<form id="contact-form-sale" name="contact-form-sale" method="POST">
 								<input type = "hidden" name="type" value ="sale">
                         <div class="form-group">
                             <label for="name">First Name</label>
-                            <input type="text" class="form-control"  name = "name" aria-describedby="emailHelp" placeholder="First Name" required>
+                            <input type="text" class="form-control" id="fname1"  name = "name" aria-describedby="emailHelp" placeholder="First Name" required>
+                        	<span id ="fnameErr1"  style="color:red" ></span>
                         </div>
 					   <div class="form-group">
                             <label for="name">Last Name</label>
-                            <input type="text" class="form-control"  name="lname" aria-describedby="emailHelp" placeholder="Last Name" required>
+                            <input type="text" class="form-control" id="lname1" name="lname" aria-describedby="emailHelp" placeholder="Last Name" required>
+                        	<span id ="lnameErr1"  style="color:red" ></span>
                         </div>
 					   
 					    <div class="form-group">
                             <label for="name">Mobile No</label>
-                            <input type="text" class="form-control"  name ="mobile" aria-describedby="emailHelp" placeholder="Enter Mobile No" required>
+                            <input type="text" class="form-control" id="mobile1"  name ="mobile" aria-describedby="emailHelp" placeholder="Enter Mobile No" required>
+                        	<span id ="mobileErr1"  style="color:red" ></span>
                         </div>
                         <div class="form-group">
                             <label for="email">Email address</label>
-                            <input type="email" class="form-control"  name ="email" aria-describedby="emailHelp" placeholder="Enter email" required>
-                            
+                            <input type="email" class="form-control" id="email1" name ="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+                            <span id ="emailErr1"  style="color:red" ></span>
                         </div>
-		
+						<div class="form-group">
+                            <label for="email">Subject</label>
+                            <input type="subject" class="form-control" id="subject1"  name = "subject" aria-describedby="emailHelp" placeholder="Subject" required>
+                            <span id ="subjectErr1"  style="color:red" ></span>
+                        </div>
 					  
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea class="form-control" id="message" rows="6" name="message" required></textarea>
+                            <textarea class="form-control" id="message1" rows="6" name="message" required></textarea>
+                        	<span id ="messageErr1"  style="color:red" ></span>
                         </div>
                         <div class="mx-auto">
-                        <button type="submit" class="btn btn-dark text-right" name ="btn-sale-submit">Submit</button> <img src = "images/giphy.gif" class="img loader-img" style ="display:none;"></div>
+                        <button type="button" id="submit1" onclick="validateForm(1)" class="btn btn-dark text-right" name ="btn-sale-submit">Submit</button> 
+                        <img src = "images/giphy.gif" id="loader1" class="img loader-img" style ="display:none;">
+                         <div id="thankyou1" style="display:none">
+		 			  		<label style="color:#1000ff">Thank you please check your email..we have sent a confirmation email</label>
+					 </div>
+                        </div>
                     </form>
                 </div>
                     </div>
                     <div id="support" class="tab-pane fade">
                         <div class="card-body">
-						<form id="contact-form-support" name="contact-form-support" method="POST" action="ajax/ajax-contact-form.php">
+						<form id="contact-form-support" name="contact-form-support" method="POST">
 						<input type = "hidden" name="type" value ="support">
                         <div class="form-group">
                             <label for="name">First Name</label>
-                            <input type="text" class="form-control"   name = "name" aria-describedby="emailHelp" placeholder="First Name" required>
+                            <input type="text" class="form-control" id="fname2"  name = "name" aria-describedby="emailHelp" placeholder="First Name" required>
+                       		<span id ="fnameErr2"  style="color:red" ></span>
                         </div>
 					   <div class="form-group">
                             <label for="name">Last Name</label>
-                            <input type="text" class="form-control"   name ="lname" aria-describedby="emailHelp" placeholder="Last Name" required>
+                            <input type="text" class="form-control" id="lname2"  name ="lname" aria-describedby="emailHelp" placeholder="Last Name" required>
+                        	<span id ="lnameErr2"  style="color:red" ></span>
                         </div>
 					   
 					    <div class="form-group">
                             <label for="name">Mobile No</label>
-                            <input type="text" class="form-control"   name ="mobile" aria-describedby="emailHelp" placeholder="Enter Mobile No" required>
+                            <input type="text" class="form-control" id="mobile2"   name ="mobile" aria-describedby="emailHelp" placeholder="Enter Mobile No" required>
+                       		<span id ="mobileErr2"  style="color:red" ></span>
                         </div>
                         <div class="form-group">
                             <label for="email">Email address</label>
-                            <input type="email" class="form-control"   name = "email" aria-describedby="emailHelp" placeholder="Enter email" required>
-                            
+                            <input type="email" class="form-control" id="email2"   name = "email" aria-describedby="emailHelp" placeholder="Enter email" required>
+                            <span id ="emailErr2"  style="color:red" ></span>
                         </div>
 		<div class="form-group">
                             <label for="email">Subject</label>
-                            <input type="subject" class="form-control"  name = "subject" aria-describedby="emailHelp" placeholder="Subject" required>
-                            
+                            <input type="subject" class="form-control" id="subject2"  name = "subject" aria-describedby="emailHelp" placeholder="Subject" required>
+                            <span id ="subjectErr2"  style="color:red" ></span>
                         </div>
 		
 					  
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea class="form-control"  rows="6" name = "message" required></textarea>
+                            <textarea class="form-control" id="message2"  rows="6" name = "message" required></textarea>
+                        	<span id ="messageErr2"  style="color:red" ></span>
                         </div>
                         <div class="mx-auto">
-                        <button type="submit" class="btn btn-dark text-right" name = "btn-submit-support">Submit</button> <img src = "images/giphy.gif" class="img loader-img" style ="display:none;"></div>
+                        <button type="button" id="submit2" onclick="validateForm(2)" class="btn btn-dark text-right" name = "btn-submit-support">Submit</button> 
+                        <img src = "images/giphy.gif" id="loader2" class="img loader-img" style ="display:none;">
+                         <div id="thankyou2" style="display:none">
+			 			  		<label style="color:#1000ff">Thank you please check your email..we have sent a confirmation email</label>
+						 </div>
+                        </div>
                     </form>
                 </div>
                     </div>
                     <div id="inquiries" class="tab-pane fade">
                        <div class="card-body">
                    
-					   <form id="contact-form-inquires" name="contact-form-inquiries" method="POST" action="ajax/ajax-contact-form.php">
+					   <form id="contact-form-inquires" name="contact-form-inquiries" method="POST">
 					   <input type = "hidden" name="type" value ="inquiries">	
 					   <div class="form-group">
                             <label for="name">First Name</label>
-                            <input type="text" class="form-control"  name ="name" aria-describedby="emailHelp" placeholder="First Name" required>
+                            <input type="text" class="form-control" id="fname3"  name ="name" aria-describedby="emailHelp" placeholder="First Name" required>
+                        	<span id ="fnameErr3"  style="color:red" ></span>
                         </div>
 					   <div class="form-group">
                             <label for="name">Last Name</label>
-                            <input type="text" class="form-control"  name ="lname" aria-describedby="emailHelp" placeholder="Last Name" required>
+                            <input type="text" class="form-control" id="lname3"  name ="lname" aria-describedby="emailHelp" placeholder="Last Name" required>
+                       		<span id ="lnameErr3"  style="color:red" ></span>
                         </div>
 					   
 					    <div class="form-group">
                             <label for="name">Mobile No</label>
-                            <input type="text" class="form-control"  name="mobile" aria-describedby="emailHelp" placeholder="Enter Mobile No" required>
+                            <input type="text" class="form-control" id="mobile3"  name="mobile" aria-describedby="emailHelp" placeholder="Enter Mobile No" required>
+                        	<span id ="mobileErr3"  style="color:red" ></span>
                         </div>
                         <div class="form-group">
                             <label for="email">Email address</label>
-                            <input type="email" class="form-control"  name ="email" aria-describedby="emailHelp" placeholder="Enter email" required>
-                            
+                            <input type="email" class="form-control" id="email3"  name ="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+                            <span id ="emailErr3"  style="color:red" ></span>
                         </div>
 							   <div class="form-group">
                             <label for="email">Subject</label>
-                            <input type="text" class="form-control"   name = "subject" aria-describedby="emailHelp" placeholder="Subject" required>
-                            
+                            <input type="text" class="form-control" id="subject3"   name = "subject" aria-describedby="emailHelp" placeholder="Subject" required>
+                            <span id ="subjectErr3"  style="color:red" ></span>
                         </div>
 		
 					  
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea class="form-control"  rows="6" name= "message" required></textarea>
+                            <textarea class="form-control" id="message3"  rows="6" name= "message" required></textarea>
+                        	<span id ="messageErr3"  style="color:red" ></span>
                         </div>
                         <div class="mx-auto">
-                        <button type="submit" class="btn btn-dark text-right" name= "btn-submit-inquiry">Submit</button> <img src = "images/giphy.gif" class="img loader-img" style ="display:none;"></div>
+                        <button type="button" id="submit3" onclick="validateForm(3)" class="btn btn-dark text-right" name= "btn-submit-inquiry">Submit</button> 
+                        <img src = "images/giphy.gif" id="loader3" class="img loader-img" style ="display:none;">
+                         <div id="thankyou3" style="display:none">
+ 			  				<label style="color:#1000ff">Thank you please check your email..we have sent a confirmation email</label>
+						 </div>
+                        </div>
+                    	<div id="dbResults" style="display:none">
+						</div>
                     </form>
                 </div>
                     </div>
@@ -448,6 +481,171 @@ Punjab - 160101</div>
         </div>
     </div>
 </div>
+<script type="text/javascript">
+function validateForm(i) {
+
+	 var fname = document.getElementById('fname'+i).value;
+	 var lname = document.getElementById('lname'+i).value;
+     var email = document.getElementById('email'+i).value;
+     var mobile_no = document.getElementById('mobile'+i).value;
+     var subject = document.getElementById('subject'+i).value;
+     var message = document.getElementById('message'+i).value;
+     
+     var letters_name = /[a-zA-Z ]+$/;
+     var letters_email = /\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+     var number = /^\d{10}$/;
+     
+     if (fname == "")
+     {
+         document.getElementById('fnameErr'+i).innerHTML = "First Name is Required";
+         return false;
+     }
+     else if (!fname.match(letters_name)) {
+         document.getElementById('fnameErr'+i).innerHTML = "Only letters and white space allowed";
+         return false;
+     }
+     else
+     {
+         var fname1 = document.getElementById('fname'+i).value;
+         document.getElementById('fnameErr'+i).innerHTML = "";
+     }
+     
+     if (lname == "")
+     {
+         document.getElementById('lnameErr'+i).innerHTML = "Last Name is Required";
+         return false;
+     }
+     else if (!lname.match(letters_name)) {
+         document.getElementById('lnameErr'+i).innerHTML = "Only letters and white space allowed";
+         return false;
+     }
+     else
+     {
+         var lname1 = document.getElementById('lname'+i).value;
+         document.getElementById('lnameErr'+i).innerHTML = "";
+     }
+     
+     if (email == "") {
+         document.getElementById('emailErr'+i).innerHTML = "Enter  Email";
+         return false;
+     }
+
+     else if (!email.match(letters_email)) {
+         document.getElementById('emailErr'+i).innerHTML = "Enter Valid Email";
+         return false;
+     }
+     else
+     {
+         var email1 = document.getElementById('email'+i).value;
+         document.getElementById('emailErr'+i).innerHTML = "";
+     }
+     
+     if (mobile_no === "")
+     {
+         document.getElementById('mobileErr'+i).innerHTML = "Contact Is Required";
+         return false;
+     }
+     else {
+         if (!mobile_no.match(number)) {
+             document.getElementById('mobileErr'+i).innerHTML = "Enter Number without 91";
+             return false;
+
+         } else
+         {
+             var mobile_no1 = document.getElementById('mobile'+i).value;
+             document.getElementById('mobileErr'+i).innerHTML = "";
+         }
+
+     }
+     
+     if (subject == "")
+     {
+         document.getElementById('subjectErr'+i).innerHTML = "Subject is Required";
+         return false;
+     }
+     else if (!subject.match(letters_name)) {
+         document.getElementById('subjectErr'+i).innerHTML = "Only letters and white space allowed";
+         return false;
+     }
+     else
+     {
+         var subject1 = document.getElementById('subject'+i).value;
+         document.getElementById('subjectErr'+i).innerHTML = "";
+     }
+     
+     if (message == "")
+     {
+         document.getElementById('messageErr'+i).innerHTML = "Message is Required";
+         return false;
+     }
+     else if (!message.match(letters_name)) {
+         document.getElementById('messageErr'+i).innerHTML = "Only letters and white space allowed";
+         return false;
+     }
+     else
+     {
+         var message1 = document.getElementById('message'+i).value;
+         document.getElementById('messageErr'+i).innerHTML = "";
+     }
+     
+     
+     $.ajax({
+         type: "POST",
+         url: "Contact_db.jsp",
+         data: {
+             fname1: fname1,
+             lname1: lname1,
+             email1: email1,
+             mobile_no1: mobile_no1,
+             subject1: subject1,
+             message1: message1
+
+         },
+         success: function (data) {
+        	 document.getElementById("submit"+i).style.display='none';
+        	 document.getElementById("loader"+i).style.display='block';
+        	 
+         	document.getElementById('dbResults').innerHTML=data;
+         	var status=document.getElementById('status').value;
+         	
+           if (status == 'Already_exists') {
+        	   document.getElementById("submit"+i).style.display='block';
+          	 document.getElementById("loader"+i).style.display='none';
+                 document.getElementById("emailErr"+i).innerHTML = "";
+                 document.getElementById("emailErr"+i).innerHTML = "Email or Mobile Number already exists.Try with different one.";
+                 
+             }
+             if (status == 'success') { 
+                  
+            	 document.getElementById('fname'+i).value="";
+                 document.getElementById('lname'+i).value="";
+                 document.getElementById('email'+i).value="";
+                 document.getElementById('mobile'+i).value="";
+                 document.getElementById('subject'+i).value="";
+                 document.getElementById('message'+i).value="";
+                 //alert(document.getElementById("sigup_mail").innerHTML);
+                 //document.getElementById("resend").style.display = "block";
+                 setTimeout(getLoader(i), 3000);
+                 setTimeout(thankyou(i), 6000);
+             }
+             
+         }
+     });
+}
+
+function getLoader(i){
+	 document.getElementById("loader"+i).style.display='none';
+	 document.getElementById("submit"+i).style.display='block';
+	 document.getElementById("thankyou"+i).style.display='block';
+   /*  document.getElementById("userForm").style.display='block';
+    document.getElementById("thankyou").style.display='block'; */
+}
+function thankyou(i){
+	  //show ThankYou Msg here
+	  $("#thankyou"+i).fadeOut();
+}
+</script>
+
 
 <!-- Footer -->
 
